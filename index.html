@@ -27,12 +27,12 @@
                 <form class="d-flex">
                     <!-- form control redondea las esquinas y me separa al busvador con el boton buscar-->
                     <input class="form-control me-2" type="search" placeholder="Buscar">
+                    <!-- btn-outline-success se utiliza para que un botón tenga en su borde de color verde. -->
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
     </nav>
-
     <div class="container-fluid bg-danger py-5">
 
         <div class="container mb-4">
@@ -40,10 +40,10 @@
         </div>
         <!-- contenedor 1 -->
         <div class="container">
-            <div class="row g-4 justify-content-center">
+            <div class="row justify-content-center">
 
                 <div class="col-12 col-md-4">
-                    <div class="card h-100 border-0 shadow-sm">
+                    <div class="card h-100 border-0">
                         <img src="static/images/hamburguesa.png" class="card-img-top" alt="Hamburguesa">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">Hamburguesa con queso</h5>
@@ -87,18 +87,19 @@
                 </div>
 
             </div>
-            <div class="container-fluid bg-danger pt-5 mg-top ">
+            <!-- container-fluid ayuda a que la pagina sea responsiva -->
+            <div class="container-fluid bg-danger pt-5 ">
                 <!-- contenedor 2 -->
-                <div class="container ">
+                <div class="titulo-2 ">
                     <h2 class="text-white fw-bold text-uppercase"> Grandes Descuentos solo por Hoy:</h2>
                 </div>
-
                 <div class="container">
-                    <div class="row g-4 justify-content-center">
+                    <div class="row justify-content-center">
                         <!-- tarjeta 1 -->
                         <div class="col-12 col-md-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="static/images/pizza.png" class="card-img-top" alt="Pizza Familiar">
+                                <img src="static/images/pizza.png" class="card-img-top"
+                                    alt="Pizza de pepperoni tamaño familiar">
                                 <div class="card-body d-flex flex-column">
                                     <div class="d-flex justify-content-between">
                                         <h5 class="card-title fw-bold text-danger">Pizza Pepperoni</h5>
@@ -119,20 +120,22 @@
                         <!-- tarjeta 2 -->
                         <div class="col-12 col-md-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="" class="card-img-top" alt="Combo Sushi">
+                                <img src="static/images/sushi.png" class="card-img-top" alt="Combo de Sushi">
                                 <div class="card-body d-flex flex-column">
                                     <div class="d-flex justify-content-between">
+                                        <!-- fw-bold cambia el grosor de la fuente -->
                                         <h5 class="card-title fw-bold text-danger">Combo Sushi x20</h5>
                                         <span class="badge bg-warning text-dark h-50">-15%</span>
                                     </div>
-                                    <p class="card-text text-muted">
+                                    <p class="text-muted">
                                         Variedad de piezas frescas: Philadelphia, California y Nigiris. Calidad premium
                                         garantizada.
                                     </p>
-                                    <div class="mt-2 mb-3">
-                                        <span class="text-muted text-decoration-line-through small me-2">$22.00</span>
+                                    <div class="mb-3">
+                                        <span class="text-decoration-line-through small me-2">$22.00</span>
                                         <span class="fw-bold fs-4 text-dark">$18.70</span>
                                     </div>
+                                    <!-- py indica el padding que habra en el eje y (tanto alto como bajo) -->
                                     <a href="#" class="btn btn-primary mt-auto btn-sm py-2">¡Aprovechar Oferta!</a>
                                 </div>
                             </div>
@@ -140,10 +143,11 @@
                         <!-- tarjeta 3 -->
                         <div class="col-12 col-md-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <img src="static" class="card-img-top" alt="Ensalada Cesar">
+                                <img src="static/images/ensalada.png" class="card-img-top" alt="Ensalada Cesar">
                                 <div class="card-body d-flex flex-column">
                                     <div class="d-flex justify-content-between">
                                         <h5 class="card-title fw-bold text-danger">Ensalada César</h5>
+                                        <!-- badge reduce el tamaño del texto y lo resalta y h es altura  -->
                                         <span class="badge bg-warning text-dark h-50">-50%</span>
                                     </div>
                                     <p class="card-text text-muted">
@@ -151,10 +155,11 @@
                                         especial.
                                     </p>
                                     <div class="mt-2 mb-3">
-                                        <span class="text-muted text-decoration-line-through small me-2">$10.00</span>
+                                        <!-- me indica margin al lador derecho de la pagina -->
+                                        <span class="text-decoration-line-through small me-2">$10.00</span>
                                         <span class="fw-bold fs-4 text-dark">$5.00</span>
                                     </div>
-                                    <a href="#" class="btn btn-primary mt-auto btn-sm py-2">¡Aprovechar Oferta!</a>
+                                    <a href="#" class="btn btn-primary btn-sm py-2">¡Aprovechar Oferta!</a>
                                 </div>
                             </div>
                         </div>
