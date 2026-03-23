@@ -9,14 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-    <title>Buena Vida - Restaurante</title>
+    <title>Restaurante Buena Vida </title>
 </head>
 
 <body>
     <!-- barra de navegacion -->
     <nav class="navbar bg-black">
         <div class="container-fluid">
-            <a class="text-warning fw-bold fs-2" href="#">
+            <a class="text-warning fw-bold fs-2 text-decoration-none " href="#">
                 Restaurante Buena Vida
             </a>
             <div class="d-flex align-items-center">
@@ -26,7 +26,7 @@
                 </i>
 
                 <form class="d-flex">
-                    <!-- form control redondea las esquinas y me separa al busvador con el boton buscar-->
+                    <!-- form control hace responsivo al input, ademas de darle mas estilo al mismo y me-2 separa los elementos a la derecha-->
                     <input class="form-control me-2" type="search" placeholder="Buscar">
                     <!-- btn-outline-success se utiliza para que un botón tenga en su borde de color verde. -->
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -70,11 +70,10 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-md-4">
                     <!-- border permite que no hayan border en la tarjeta -->
                     <div class="card h-100 border-0">
-                        <img src="static/images/hamburguesa.png" class="card-img-top" alt="Tacos">
+                        <img src="static/images/tacos.png" class="card-img-top" alt="Tacos">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold">Tacos al pastor</h5>
                             <!-- muted permite cambiar el color del parrafo para jerarquizar en la tarjeta -->
@@ -87,9 +86,59 @@
                     </div>
                 </div>
             </div>
+
+
+            <!-- contenedor 2 -->
+            <div class="container">
+                <div class="row justify-content-center pt-4">
+                    <h2 class="text-white">Comida gourmet</h2>
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-0">
+                            <img src="static/images/risotto.png" class="card-img-top" alt="Hamburguesa">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Risotto de Azafrán con Vieiras</h5>
+                                <p class="card-text">
+                                    Un arroz italiano de textura extra cremosa, infusionado con la intensidad aromática
+                                    del azafrán, servido con vieiras selladas a la plancha
+                                </p>
+                                <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="static/images/magret.png" class="card-img-top" alt="Corte carne">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Magret de Pato con Frutos Rojos</h5>
+                                <p class="card-text">
+                                    Un corte de pechuga de pato con la piel crujiente y la carne jugosa, bañado en una
+                                    reducción ácida y dulce de frutos rojos.
+                                </p>
+                                <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- border permite que no hayan border en la tarjeta -->
+                        <div class="card h-100 border-0">
+                            <img src="static/images/tartar.png" class="card-img-top" alt="Tacos">
+                            <div class="card-body d-flex flex-column">
+                                <h5 class="card-title fw-bold">Tartar de Atún Rojo con Esferificaciones</h5>
+                                <!-- muted permite cambiar el color del parrafo para jerarquizar en la tarjeta -->
+                                <p class="card-text">
+                                    Atún de primera calidad cortado a cuchillo, marinado en cítricos y soja.
+                                </p>
+                                <a href="#" class="btn btn-primary mt-auto">Agregar al carrito</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
             <!-- container-fluid ayuda a que la pagina sea responsiva -->
             <div class="container-fluid bg-danger pt-5 ">
-                <!-- contenedor 2 -->
+                <!-- contenedor 3 -->
                 <div class="titulo-2 ">
                     <!-- text-uppercase indica que el texto se transformara a mayusculas aun si se escribe sin ellas en el teclado -->
                     <h2 class="text-white fw-bold text-uppercase"> Grandes Descuentos solo por Hoy:</h2>
@@ -106,9 +155,8 @@
                                         <h5 class="card-title fw-bold text-danger">Pizza Pepperoni</h5>
                                         <span class="bg-warning text-dark h-50">-30%</span>
                                     </div>
-                                    <>
-                                        Nuestra famosa pizza familiar con doble queso y pepperoni crujiente. ¡Perfecta
-                                        para compartir!
+                                    Nuestra famosa pizza familiar con doble queso y pepperoni crujiente. ¡Perfecta
+                                    para compartir!
                                     </p>
                                     <div class="mt-2 mb-3">
                                         <span class="text-decoration-line-through small me-2">$18.00</span>
@@ -121,11 +169,10 @@
                         <!-- tarjeta 2 -->
                         <div class="col-12 col-md-4">
                             <div class="card h-100 border-0 shadow-sm">
-                                <!--  -->
                                 <img src="static/images/sushi.png" class="card-img-top" alt="Combo de Sushi">
                                 <div class="card-body d-flex flex-column">
                                     <div class="d-flex justify-content-between">
-                                        <!-- fw-bold cambia el grosor de la fuente -->
+                                        <!-- fw-bold cambia el grosor de la fuente y card-title hace que el texto se destaque mas -->
                                         <h5 class="card-title fw-bold text-danger">Combo Sushi x20</h5>
                                         <span class="bg-warning text-dark h-50">-15%</span>
                                     </div>
@@ -166,7 +213,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
 
 
